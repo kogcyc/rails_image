@@ -17,7 +17,7 @@ class PicsController < ApplicationController
 
 		imgup = params[:stuff].read                  	# the data
 		#imgup = params[:stuff].original_filename		# its file name on the client
-		#imgup = params[:stuff].content_type.chomp    	# something like "image/jpg" or "image/png"
+		#imgup = params[:stuff].content_type.chomp    	# something like "image/png"
 
 		@pic = Base64.encode64(imgup)
 
